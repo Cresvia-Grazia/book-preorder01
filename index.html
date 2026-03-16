@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Book Reservation</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Book Reservation</h2>
+
+<input type="text" id="search" placeholder="Search books">
+
+</header>
+
+
+<div id="books" class="grid"></div>
+
+
+<div class="cart">
+
+<h3>Selected Books</h3>
+
+<table id="cartTable"></table>
+
+<p>Total Qty: <span id="qty">0</span></p>
+
+<p>Total Cost: ₱<span id="total">0</span></p>
+
+<button onclick="confirmReservation()">Confirm Reservation</button>
+
+</div>
+
+
+<div id="popup" class="popup hidden">
+
+<h3>Reservation confirmed!</h3>
+
+<p>Order ID:</p>
+
+<h2 id="orderid"></h2>
+
+<button onclick="copyOrder()">Copy Order ID</button>
+
+<button onclick="goForm()">Go to Form</button>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
